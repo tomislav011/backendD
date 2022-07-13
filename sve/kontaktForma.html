@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title> Kontakt forma </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    </head>
+    <body>
+        <h1>Kontakt forma</h1>
+
+        <form method="GET" action="obradaObrasca.php">
+
+            Ime:<br/>
+            <input type="text" name="ime"/>
+            <br/>
+            Prezime:<br/>
+            <input type="text" name="prezime"/>
+            <br/>
+            Adresa:<br/>
+            <input type="text" name="adresa"/>
+            <br/>
+            Model uređaja: <br/>
+            <select name="model">
+                <option>Model 1</option>
+                <option>Model 2</option>
+                <option>Model 3</option>
+            </select>
+            <br/>
+            Grad: <br/>
+            <select name="grad">   
+                <option>Osijek</option>
+                <option>Zagreb</option>
+                <option>Split</option>
+            </select>
+            <br/>
+            <textarea name="opis" cols="50">Opis kvara...</textarea>
+
+            <input type="checkbox" name="zanr_1" value="1"/>Triler<br/>
+            <input type="checkbox" name="zanr_2" value="2"/>Horor<br/>
+            <input type="checkbox" name="zanr_3" value="3"/>Akcija<br/>
+            <input type="checkbox" name="zanr_4" value="4"/>Drama<br/>
+            <input type="checkbox" name="zanr_5" value="5"/>Sci-fi<br/>
+            <?php
+                $zanrovi = array('1'=>'Triler','2'=>'Horor','3'=>'Akcija','4'=>'Drama','5'=>'Sci-fi');
+                foreach($zanrovi as $key=>$val){
+                    echo '<input type="checkbox" name="zanrovi[]" value="'.$key.'"/>'.$val.'<br/>';
+                }
+            ?>
+            <br/><br/><br/>
+            Pretplata na newsletter:<br/>
+            <input type="radio" name="pretplata" value="Da"/> Da <br/>
+            <input type="radio" name="pretplata" value="Ne"/> Ne
+            <br/>
+            Zaštita podataka:<br/>
+            <input type="checkbox" name="gdpr" checked="checked"/>
+            <br/><br/>
+            <input type="submit" name="submit_btn" value="Pošalji"/>
+
+        </form>
+
+
+    </body>
+
+</html>

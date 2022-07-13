@@ -1,0 +1,30 @@
+[
+    {
+        "ime":"Pero",
+        "prezime":"Peric",  
+        "godine":33,
+        "email":"pero.peric@gmai.com",
+        "telefon":"+385991112223"  
+    },
+    {
+        "ime":"Marko",
+        "prezime":"Markovic",  
+        "godine":45,
+        "email":"mmarkovic@gmai.com",
+        "telefon":"+385992223336"  
+    },
+    {
+        "ime":"John",
+        "prezime":"Smith",  
+        "godine":25,
+        "email":"john.smith@gmai.com",
+        "telefon":"+385911112223"  
+    },
+    {
+        "ime":"Ivo",
+        "prezime":"Iviv",  
+        "godine":65,
+        "email":"iivic@gmai.com",
+        "telefon":"+38597444666"  
+    }
+]
