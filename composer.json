@@ -1,0 +1,6 @@
+{
+    "name": "galba/public_html",
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
