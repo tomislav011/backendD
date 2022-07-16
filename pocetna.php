@@ -1,6 +1,6 @@
 <html>
 <head>
- <title>Pocetna stranica</title>
+ <title>Pocetna stranica 2</title>
  <meta http-equiv="Content-Type" content="text/html; charset=windows-1250" />
 
 <script>
